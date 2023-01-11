@@ -7,7 +7,7 @@
 
     --bw-dark-color: #212121;
     --bw-light-color: #f6ecec;
-    --bw-background-color: white;
+    --bw-background-color: #f6ecec;
 
     --bw-title-font: 'Bebas Neue', sans-serif;
     --bw-subtitle-font: 'Fira Sans', sans-serif;
@@ -19,7 +19,7 @@
     --bw-line-height: 1.5rem;
     --bw-title-color: var(--bw-dark-color);
 
-    --bw-section-color-even: #f6ecec;
+    --bw-section-color-even: #c6b6b6;
     --bw-section-color-odd: #fae178;
 
     --bw-link-color: #ffd61d;
@@ -156,6 +156,7 @@ h1,
     width: 100%;
     overflow: hidden;
     background-size: cover;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
 }
 
 .main-header-cover > .main-header-content {
@@ -211,6 +212,8 @@ section {
 .section-page {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+    
 }
 
 .section-page:nth-child(even) {
@@ -219,6 +222,14 @@ section {
 
 .section-page:nth-child(odd) {
     background-color: var(--bw-section-color-odd);
+}
+
+.section-page:nth-last-child(2) {
+    background-color: var(--bw-section-color-odd);
+}
+
+.section-page:last-child {
+    background-color: var(--bw-section-color-even);
 }
 
 .dev-icon {
@@ -232,8 +243,7 @@ section {
 }
 
 .link-style:hover {
-    color: var(--bw-secondary-color);
-    filter: saturate(2);
+    filter: brightness(1.5) saturate(2);
     text-decoration: underline;
 }
 
@@ -245,6 +255,26 @@ section {
 .link-style-odd:hover {
     color: var(--bw-dark-color);
     filter: brightness(4);
+}
+
+.section-cta {
+    background-color: var(--bw-dark-color);
+    color: var(--bw-light-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.cta-arrow {
+    color: var(--bw-dark-color);
+    font-size: 1rem;
+}
+
+.cta-arrow:hover {
+    color: var(--bw-highlight-color);
+    filter: brightness(1.2)
 }
 
 /* end section styles */
@@ -268,7 +298,21 @@ section {
 }
 
 .social-icons {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
+}
+
+.footer-cta {
+    background-color: var(--bw-primary-color);
+    width: 75%;
+    border-radius: 10px;
+}
+
+.footer-bg-cta {
+    background: linear-gradient(to bottom,
+                                var(--bw-background-color),
+                                var(--bw-background-color) 50%,
+                                var(--bw-dark-color) 50%,
+                                var(--bw-dark-color) 100%);
 }
 
 /* end footer styles */
@@ -312,6 +356,15 @@ section {
         line-height: 1.3rem;
         letter-spacing: 0.1rem;
     }
+
+    .section-cta {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    .cta-arrow {
+        font-size: 1.2rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -330,6 +383,15 @@ section {
         font-size: 1.75rem;
         line-height: 1.75rem;
         letter-spacing: 0.2rem;
+    }
+
+    .section-cta {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .cta-arrow {
+        font-size: 1.7rem;
     }
 }
 
