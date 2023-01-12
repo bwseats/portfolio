@@ -6,10 +6,12 @@ for the default hc-card class set the width and height to the
 same aspect ratio at all break points for best results. 
 *Note: this was built with square cards in mind.
 ---------------------*/
+
 .hc-wrapper {
     display: flex;    
     justify-content: center;
 }
+
 .hc-card {
     width: 225px;
     height: 225px;
@@ -22,6 +24,7 @@ same aspect ratio at all break points for best results.
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
 }
+
 .hc-card:before {
     content: "";
     position: absolute;
@@ -40,13 +43,16 @@ same aspect ratio at all break points for best results.
 .hc-card:hover {
     transform: translateY(20px);
 }
+
 .hc-card:hover:before {
     opacity: 1;
 }
+
 .hc-card:hover .hc-content {
     opacity: 1;
     transform: translateY(0px);
 }
+
 .hc-card img {
     width: 100%;
     height: 100%;
@@ -57,6 +63,7 @@ same aspect ratio at all break points for best results.
     left: 0;
     border-radius: 15px;
 }
+
 .hc-card .hc-content {
     position: relative;
     z-index: 3;
@@ -65,25 +72,28 @@ same aspect ratio at all break points for best results.
     transform: translateY(30px);
     transition: 0.5s;
 }
+
 .hc-card .hc-content p {
     letter-spacing: 1px;
     font-size: .9rem;
     margin-top: .5em;
 }
+
 .hc-card .hc-content button {
     padding: 0.6rem;
     outline: none;
     border: none;
     border-radius: 3px;
-    background: white;
-    color: black;
+    background: var(--bw-light-color);
+    color: var(--bw-dark-color);
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
 }
+
 .hc-card .hc-content button:hover {
-    background: var(--bw-secondary-color);
-    color: black;
+    background: var(--bw-dark-color);
+    color: var(--bw-light-color);
 }
 
 @media(min-width:1200px) {

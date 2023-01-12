@@ -1,9 +1,9 @@
 :root {
-    --bw-primary-color: #fae178;
-    --bw-secondary-color: #fae178;
+    --bw-primary-color: #1f80ff;
+    --bw-secondary-color: #4373b3;
 
     --bw-nav-toggler-color: var(--bw-highlight-color);
-    --bw-nav-toggler-glow: #cab970;
+    --bw-nav-toggler-glow: #435bc9;
 
     --bw-dark-color: #212121;
     --bw-light-color: #f6ecec;
@@ -19,10 +19,10 @@
     --bw-line-height: 1.5rem;
     --bw-title-color: var(--bw-dark-color);
 
-    --bw-section-color-even: #c6b6b6;
-    --bw-section-color-odd: #fae178;
+    --bw-section-color-even: #d4c8c8;
+    --bw-section-color-odd: #f6ecec;
 
-    --bw-link-color: #ffd61d;
+    --bw-link-color: #1f80ff;
 
 }
 
@@ -98,42 +98,24 @@ h1,
 }
 
 .btn-primary {
-    background-color: var(--bw-secondary-color) !important;
-    border-color: var(--bw-secondary-color) !important;
-    color: var(--bw-dark-color);
+    background-color: var(--bw-dark-color) !important;
+    border-color: var(--bw-dark-color) !important;
+    color: var(--bw-light-color);
 }
 
 .btn-primary:hover {
     filter: brightness(1.1) !important;
     border-color: var(--bw-dark-color);
-    color: var(--bw-dark-color);
+    color: var(--bw-light-color);
 }
 
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
     filter: brightness(1.1) !important;
-    border-color: var(--bw-primary-color)
+    border-color: var(--bw-dark-color)
 }
 
-.btn-primary-odd {
-    background-color: var(--bw-dark-color) !important;
-    border-color: var(--bw-dark-color) !important;
-    color: var(--bw-light-color);
-}
-
-.btn-primary-odd:hover {
-    filter: brightness(2) !important;
-    border-color: var(--bw-secondary-color);
-    color: var(--bw-light-color);
-}
-
-.btn-primary-odd:active,
-.btn-primary-odd:visited,
-.btn-primary-odd:focus {
-    filter: brightness(1.1) !important;
-    border-color: var(--bw-primary-color)
-}
 
 /* end element overrides */
 
@@ -149,9 +131,9 @@ h1,
 
 .main-header-cover {
     min-height: 200px;
-    background-image: url(/img/cityBG_2560.png);
+    background-image: url(/img/surreal-wave.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: center left;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -160,7 +142,7 @@ h1,
 }
 
 .main-header-cover > .main-header-content {
-    backdrop-filter: blur(2.25px) hue-rotate(210deg) brightness(90%) contrast(150%) saturate(200%);
+    backdrop-filter: blur(2.25px) hue-rotate(40deg) brightness(90%) contrast(150%) saturate(200%);
 }
 
 @supports not (backdrop-filter: blur(3px)) {
@@ -177,7 +159,7 @@ h1,
     font-family: var(--bw-title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--bw-light-color)
+    color: var(--bw-dark-color)
 }
 
 .main-logo {
@@ -189,7 +171,7 @@ h1,
     font-size: 0.7rem;
     line-height: 1rem;
     font-weight: 300;
-    color: var(--bw-light-color);
+    color: var(--bw-dark-color);
     letter-spacing: 0.09rem;
 }
 
@@ -302,9 +284,11 @@ section {
 }
 
 .footer-cta {
-    background-color: var(--bw-primary-color);
-    width: 75%;
+    background-image: url(/img/surreal-wave.png);
+    width: 100%;
     border-radius: 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 .footer-bg-cta {
