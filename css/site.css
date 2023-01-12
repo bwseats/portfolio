@@ -229,16 +229,6 @@ section {
     text-decoration: underline;
 }
 
-.link-style-odd {
-    color: var(--bw-dark-color);
-    text-decoration: underline;
-}
-
-.link-style-odd:hover {
-    color: var(--bw-dark-color);
-    filter: brightness(4);
-}
-
 .section-cta {
     background-color: var(--bw-dark-color);
     color: var(--bw-light-color);
@@ -250,7 +240,7 @@ section {
 }
 
 .cta-arrow {
-    color: var(--bw-dark-color);
+    color: var(--bw-light-color);
     font-size: 1rem;
 }
 

@@ -92,8 +92,8 @@ same aspect ratio at all break points for best results.
 }
 
 .hc-card .hc-content button:hover {
-    background: var(--bw-dark-color);
-    color: var(--bw-light-color);
+    background: var(--bw-light-color);
+    color: var(--bw-dark-color);
 }
 
 @media(min-width:1200px) {
