@@ -22,13 +22,16 @@
     --bw-section-color-even: #d4c8c8;
     --bw-section-color-odd: #f6ecec;
 
-    --bw-link-color: #1f80ff;
+    --bw-link-color: #46b6a7;
+
+    --bw-background-image: url(/img/surreal-wave.png);
 
 }
 
 html,
 body {
-    height: 100%
+    height: 100%;
+    overflow-y: auto;
 }
 
 body {
@@ -41,6 +44,10 @@ body {
     line-height: var(--bw-line-height);
     color: var(--bw-dark-color);
     background: var(--bw-background-color);
+}
+
+body.background-image {
+    backdrop-filter: blur(10px)
 }
 
 .content {
@@ -248,6 +255,15 @@ section {
     color: var(--bw-highlight-color);
     filter: brightness(1.2)
 }
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+
 
 /* end section styles */
 

@@ -84,8 +84,8 @@ same aspect ratio at all break points for best results.
     outline: none;
     border: none;
     border-radius: 3px;
-    background: var(--bw-light-color);
-    color: var(--bw-dark-color);
+    background: var(--bw-dark-color);
+    color: var(--bw-light-color);
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
@@ -93,7 +93,7 @@ same aspect ratio at all break points for best results.
 
 .hc-card .hc-content button:hover {
     background: var(--bw-light-color);
-    color: var(--bw-dark-color);
+    color: var(--bw-light-color);
 }
 
 @media(min-width:1200px) {

@@ -32,6 +32,9 @@
     <!-- dev icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
+    <!-- blog cards -->
+    <link rel="stylesheet" href="/css/blog-card.css" />
+
     <!-- hover cards -->
     <link rel="stylesheet" href="/css/hover-card.css" />
 
@@ -41,7 +44,7 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-smooth-scroll="true">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#">
@@ -57,7 +60,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-center active" aria-current="page" href="#home">home</a>
+                        <a class="nav-link text-center" aria-current="page" href="#home">home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-center" href="#about">about</a>
@@ -225,7 +228,7 @@
                                     A full-stack bug tracker app built with ASP.NET MVC, C#, and Postgres.
                                 </p>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#bug-tracker-modal"
-                                    class="btn btn-primary">Learn More</button>
+                                    class="btn btn-primary">learn more</button>
                             </div>
                         </div>
                     </div>
@@ -244,7 +247,7 @@
                                     A full-stack contact management app built with ASP.NET MVC, C#, and Postgres.
                                 </p>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#contact-pro-modal"
-                                    class="btn btn-primary">Learn More</button>
+                                    class="btn btn-primary">learn more</button>
                             </div>
                         </div>
                     </div>
@@ -263,7 +266,7 @@
                                     A full-stack blog app built with ASP.NET MVC, C#, and Postgres.
                                 </p>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#blog-modal"
-                                    class="btn btn-primary">Learn More</button>
+                                    class="btn btn-primary">learn more</button>
                             </div>
                         </div>
                     </div>
@@ -292,7 +295,7 @@
                                 <p>
                                     A simple app to calculate your monthly mortgage payment!
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -310,7 +313,7 @@
                                 <p>
                                     Insert any string and see if it's a palindrome!
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -328,7 +331,7 @@
                                 <p>
                                     You've heard of 1 number, now get ready for 100 numbers!
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -346,7 +349,7 @@
                                 <p>
                                     Keep track of event attendance stats and organize them by city!
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -364,7 +367,7 @@
                                 <p>
                                     You've never seen multiples of 3, 5, and 15 like this before!
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -382,7 +385,7 @@
                                 <p>
                                     Turn that noun upside-down! (or backwards, I guess...)
                                 </p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <a href="#" class="btn btn-primary">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -403,6 +406,169 @@
         </section>
         <!-- -->
         <section class="section-page" id="blog">
+            <h1>What I've written About</h1>
+            <p>I try to write on my blog on a regular basis. I think it's important to share your knowledge with others.
+            </p>
+            <!-- blog cards -->
+            <div class="d-flex flex-column align-items-center align-items-md-start" id="blogs">
+                
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="flying girl">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">
+                                    11
+                                </div>
+                                <div class="blog-month">
+                                    January
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">Make Kids Fly on Suitcases</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">read more</a>
+                                </div>
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        published 1 day ago
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="flying girl">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">
+                                    11
+                                </div>
+                                <div class="blog-month">
+                                    January
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">Touch some floating squares</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">read more</a>
+                                </div>
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        published 1 day ago
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="flying girl">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">
+                                    11
+                                </div>
+                                <div class="blog-month">
+                                    January
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">type an empty closing tag</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">read more</a>
+                                </div>
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        published 1 day ago
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a href="#" class="blog-image-link">
+                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="flying girl">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">
+                                    11
+                                </div>
+                                <div class="blog-month">
+                                    January
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">look at some blank signs</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, est deserunt
+                                    soluta necessitatibus officiis excepturi labore tempore laboriosam consectetur!
+                                    Maxime vel fuga ipsum accusantium, magnam molestiae officiis eius ullam optio.
+                                </p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">read more</a>
+                                </div>
+                                <p class="card-text mt-3">
+                                    <small class="text-muted">
+                                        published 1 day ago
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </section>
         <!-- even -->
         <section class="section-page" id="contact">
@@ -737,7 +903,8 @@
                                     <!-- change images -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="/img/logos/blog-logo-600.png" class="d-block w-100" alt="Blog Logo">
+                                            <img src="/img/logos/blog-logo-600.png" class="d-block w-100"
+                                                alt="Blog Logo">
                                         </div>
                                         <div class="carousel-item">
                                             <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
