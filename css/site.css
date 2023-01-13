@@ -44,10 +44,11 @@ body {
     line-height: var(--bw-line-height);
     color: var(--bw-dark-color);
     background: var(--bw-background-color);
+    background-position: center center;
 }
 
 body.background-image {
-    backdrop-filter: blur(10px)
+    backdrop-filter: blur(30px)
 }
 
 .content {
@@ -290,10 +291,9 @@ section {
 }
 
 .footer-cta {
-    background-image: url(/img/surreal-wave.png);
+    background-image: url(/img/wave-seapunk2.png);
     width: 100%;
-    border-radius: 10px;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
