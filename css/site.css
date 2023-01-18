@@ -8,11 +8,12 @@
     --bw-dark-color: #212121;
     --bw-light-color: #f6ecec;
     --bw-background-color: #f6ecec;
+    --bw-footer-card-color: rgba(255, 255, 255, 0);
 
-    --bw-title-font: 'Bebas Neue', sans-serif;
-    --bw-subtitle-font: 'Fira Sans', sans-serif;
-    --bw-heading-font: 'Bebas Neue', sans-serif;
-    --bw-body-font: 'Roboto', sans-serif;
+    --bw-title-font: 'Youtube Sans', sans-serif;
+    --bw-subtitle-font: 'Youtube Sans Light', sans-serif;
+    --bw-heading-font: 'Youtube Sans', sans-serif;
+    --bw-body-font: 'Lato', sans-serif;
 
     --bw-font-size: 1.2rem;
     --bw-font-weight: 400;
@@ -24,7 +25,7 @@
 
     --bw-link-color: #46b6a7;
 
-    --bw-background-image: url(/img/surreal-wave.png);
+    --bw-background-image: url(/img/background.png);
 
 }
 
@@ -43,7 +44,7 @@ body {
     font-weight: var(--bw-font-weight);
     line-height: var(--bw-line-height);
     color: var(--bw-dark-color);
-    background: var(--bw-background-color);
+    background: var(--bw-background-image);
     background-position: center center;
 }
 
@@ -222,6 +223,8 @@ section {
 
 .section-page:last-child {
     background-color: var(--bw-section-color-even);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .dev-icon {
@@ -284,7 +287,7 @@ section {
 }
 
 .footer-main a.social-icons:hover {
-    color: var(--bw-secondary-color);
+    color: var(--bw-link-color);
     opacity: 1;
 }
 
@@ -293,22 +296,40 @@ section {
 }
 
 .footer-cta {
-    background-image: url(/img/wave-seapunk2.png);
+    background-image: url(/img/background.png);
     width: 100%;
+    border-radius: 10px;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .footer-bg-cta {
     background: linear-gradient(to bottom,
-                                var(--bw-background-color),
-                                var(--bw-background-color) 50%,
+                                var(--bw-footer-card-color),
+                                var(--bw-footer-card-color) 50%,
                                 var(--bw-dark-color) 50%,
                                 var(--bw-dark-color) 100%);
 }
 
+#footer-img:hover {
+    content: url(/img/logo-wave.png);
+    transition: opacity 3s ease;
+}
+
+
 /* end footer styles */
 
+/* -------------------- FONTS -------------------- */
+
+@font-face {
+    font-family: 'Youtube Sans';
+    src: url(/fonts/YOUTUBE-SANS-BOLD.TTF);
+}
+
+@font-face {
+    font-family: 'Youtube Sans Light';
+    src: url(/fonts/YOUTUBE-SANS-LIGHT.TTF);
+}
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
@@ -321,13 +342,13 @@ section {
 
     .main-title {
         font-size: 2.5rem;
-        line-height: 2rem;
+        line-height: 2.2rem;
     }
 
     .subtitle {
         font-size: 0.7rem;
         line-height: 1rem;
-        letter-spacing: 0.09rem;
+        letter-spacing: 0.13rem;
     }
 }
 
@@ -340,13 +361,13 @@ section {
     
     .main-title {
         font-size: 4.5rem;
-        line-height: 3.25rem;
+        line-height: 3.8rem;
     }
     
     .subtitle {
         font-size: 1.4rem;
         line-height: 1.3rem;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.17rem;
     }
 
     .section-cta {
@@ -368,13 +389,13 @@ section {
     
     .main-title {
         font-size: 6rem;
-        line-height: 4.25rem;
+        line-height: 5rem;
     }
     
     .subtitle {
         font-size: 1.75rem;
         line-height: 1.75rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.28rem;
     }
 
     .section-cta {
@@ -396,13 +417,13 @@ section {
     
     .main-title {
         font-size: 7rem;
-        line-height: 5rem;
+        line-height: 6rem;
     }
     
     .subtitle {
         font-size: 2rem;
         line-height: 2rem;
-        letter-spacing: 0.23rem;
+        letter-spacing: 0.37rem;
     }
 }
 
@@ -415,12 +436,12 @@ section {
     
     .main-title {
         font-size: 7rem;
-        line-height: 5rem;
+        line-height: 6rem;
     }
     
     .subtitle {
         font-size: 2rem;
         line-height: 2rem;
-        letter-spacing: 0.23rem;
+        letter-spacing: 0.37rem;
     }
 }
