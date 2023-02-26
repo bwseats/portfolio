@@ -5,10 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\benja\\OneDrive\\Documents\\code\\portfolio\\index.html"
+            "type": "chrome",
+            "url": "http://localhost:5501",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
