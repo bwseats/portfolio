@@ -244,6 +244,9 @@ section {
 }
 
 .section-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bw-dark-color);
     color: var(--bw-light-color);
     padding-top: 1rem;
