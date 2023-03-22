@@ -18,7 +18,7 @@ function displayBlogs(blogPosts, baseURL) {
 
         // set blog image link
         let imageDiv = articleCard.querySelector('[data-blog="imageLink"]');
-        imageDiv.href = `${baseURL}Content/${blogPost.slug}`;
+        imageDiv.href = `${baseURL}/content/${blogPost.slug}`;
 
         // create image element
         let blogImage = document.createElement('img');
