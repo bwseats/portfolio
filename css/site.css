@@ -125,6 +125,15 @@ h1,
     border-color: var(--bw-dark-color)
 }
 
+.goals-card {
+    background-color: var(--bw-section-color-even);
+}
+
+.goals-card:hover {
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
 
 /* end element overrides */
 
@@ -230,7 +239,6 @@ section {
 
 .dev-icon {
     font-size: 4rem;
-
 }
 
 .link-style {
