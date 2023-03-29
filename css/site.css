@@ -240,6 +240,10 @@ section {
     font-size: 4rem;
 }
 
+.resume-button {
+    font-size: 10rem;
+}
+
 .link-style {
     color: var(--bw-link-color);
     text-decoration: none;
